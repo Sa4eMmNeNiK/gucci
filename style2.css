@@ -1,0 +1,420 @@
+* {	
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+body {
+	background-image: url(img/5.jpg);
+   
+}
+
+.box {
+	height: 100px;
+	width: max-content;
+	background-color: ;
+	position:absolute;
+	margin: auto;
+	display: grid ;
+	grid-template-columns: repeat(6,max-content);
+	grid-template-rows: 100px;
+	grid-gap: 10px;
+
+}
+@media screen and (max-width: 600px) {
+	.box {
+		grid-template-columns: repeat(2, max-content);
+	}
+}
+
+
+
+
+.test2 {
+	height: 50px;
+	width: 100px;	
+	position: relative;	
+	line-height: 50px;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;	
+}
+.test2:hover .test3{
+	top: -40px;
+
+}
+.test3{
+	height: 50px;
+	width: 100px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 50;
+	transition: .8s;
+	border-radius: 20px;
+	opacity: ;
+}
+.test{
+	position: absolute;
+	z-index: 40;
+}
+
+.box1 {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	border-bottom: 1px solid #56dbcc;
+	background: #56dbcc;
+	opacity: 0.5;
+}
+
+
+.box1 {
+	line-height: 20px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+
+}
+.box2 {
+	text-align: center;
+	color: #fff;
+}
+
+	/*это меняет файл со статьей(индекс)*/
+
+.color {
+	color: #8d9e9a;
+}
+h1 {
+	text-align: center;
+}
+
+.color1 {
+	background-color: #000;
+}
+
+
+
+
+
+#box {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top:100%;
+    background: #222222;
+
+}
+
+
+#content {
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    position: absolute;
+    margin: auto;
+}
+
+#social {
+    width: max-content;
+    height: calc(100% - 72px);
+    position: absolute;
+    margin: auto 0;
+    left: 100%;
+    transform: translate(-100%, 0%);
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: 48px auto;
+    grid-template-areas: 
+        'soc soc'
+        'url url';
+    grid-gap: 16px;
+}
+
+#social #soc_con {
+    grid-area: soc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 48px;
+    grid-gap: 16px;
+}
+
+#social .soc {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#social .alb {
+    height: 24px;
+    grid-area: url;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+}
+
+#social .alb a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#social #soc_con .fb {
+    background: url('img/fb.jpg');
+    background-size: cover;   
+}
+
+#social #soc_con .vk {
+    background: url('img/vk.jpg');
+    background-size: cover;
+}
+
+#zp {
+    width: 340px;
+    height: calc(100% - 72px);
+    position: absolute;
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 64px auto;
+}
+
+#zp #logo {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #222222;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    /* margin: auto; */
+}
+
+#zp #opisanie {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    margin-top: auto;
+    line-height: 24px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#doki {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin: auto;
+    border: 1px solid red;
+    perspective: 400px;
+    transform-style: preserve-3d;
+    perspective-origin: center center;
+
+
+}
+
+.box1 {
+    width: inherit;
+    height: inherit;
+    
+    background-color: #fff;
+    position: relative;
+    margin-right: 30px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#text1 {
+    height: 150px;
+    width: max-content;
+    position: absolute;
+    margin: auto;
+}
+
+
+.textbox {
+    height: 150px;
+    width: 200px;
+    position: relative;
+    float: left;
+    /*opacity: 0.5;*/
+    margin-right: 10px;
+    color:#fff;
+    background-color: rgba(21, 49, 53, 60%);
+    border-radius: 40px;
+    font-size: 13px;
+    text-align: center;
+}
+.h1text {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    border:2px solid #fff;
+    border-radius: 160px;
+    background-color: rgba(21, 49, 53, 60%);
+    
+
+}
+
+
+
+
+
+
+.knopka {
+    height: 16px;
+    width: max-content;    
+    position: fixed;
+    background-color: #000;
+   
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px;
+
+
+}
+.textbox:nth-child(2){
+    margin-right: 0px;
+
+}
+
+
+.knopka:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.knopka a {
+    text-decoration: none;
+    color: #fff;
+}
+    
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    top: 24px;
+}
+
+header #con {
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    height: 72px;
+    position: absolute;
+    margin: auto;
+}
+
+header #con #zp_logo {
+    width: max-content;
+    height: 72px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 36px;
+}
+
+header #con #zp_logo span {
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #cbd6d4;
+    text-align: left;
+}
+
+header #con #zp_logo span:nth-child(2) {
+    display: grid;
+    grid-template-columns: 24px max-content;
+    grid-template-rows: 36px;
+
+}
+
+header #con #zp_logo span:nth-child(2):before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #cbd6d4;
+    position: relative;
+    animation: 6s test cubic-bezier(.07,.72,.03,1) infinite;
+    margin: 10px 0px;
+}
+
+header ul{
+    width: max-content;
+    height: 24px;
+    position: absolute;
+    margin: auto 0;
+    left: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: 24px;
+    grid-gap: 8px;  /*расстояние между блок*/
+    transform: translate(-100%, 0%);
+   
+
+
+
+}
+header ul li{
+    text-decoration: none;
+    list-style: none;
+
+
+
+}
+header ul li a{
+    line-height: 24px;
+    font-size: 16px;
+    text-align: center; 
+    color: #fff;
+    padding: 0px 8px;
+    text-decoration: none;
+
+
+
+}
+
+header ul li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+
+
+
+@keyframes test {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+	#opisanie {
+		display: none;
+	}
+    #zp {
+        width: 64px;
+    }       
+}
+
+
