@@ -1,106 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
+* {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
 
-
-*{
-	font-family: 'Kumbh Sans';
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	padding: 0;
-	margin: 0;
-}	
 body {
-	background-image: url(img/3.png);
-	
+    width: 100%;
+    height: 100%;
 }
 
 
 
-header {
-	width: 100%;
-	height: 20px;
-	position: absolute;
-	border-bottom: 1px solid #56dbcc;
-	background: #56dbcc;
-}
-header:before{
-	content: 'Zp';
-	height: 18px;
-	width: 18px;
-	position: absolute;
-	animation: 6s test cubic-bezier(.07,.72,.03,1) infinite;
-	background-color: #404d4b;
-	border-radius: 5px;
-	left: calc(100% - 22px);
-	color:#fff;
-	font-weight: 700 ;
-
-
-
-}
-@keyframes test {
-	from{
-		transform: rotate(0deg);
-	}
-	to{
-		transform: rotate(360deg);
-	}
-}
-.text {
-	line-height: 20px;
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
-
-}
 .box {
-	width: 720px;
-	height: 360px;
-	position: absolute;
-	margin: auto 0;
-	left: 100%;
-	transform: translate(-100%, 0%);
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    margin: auto;
+    background-color: brown;
+    border: 3px solid rgb(0, 0, 0);
+}
 
+.box h6 {
+    text-decoration: none;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe';
+    color: white;
 }
-.box1 {
-	width: 720px;
-	height: 360px;
-	transition: 0.4s;
-	background: #fff;
-	position: absolute;
-	z-index: 50;
-	
-		
+
+.bagger:hover {
+    background-color: rgb(145, 145, 145);
 }
-.box2 {
-	width: 720px;
-	height: 360px;
-	background: red;
-	position: absolute;
-	z-index: 40px;
-	
 
 
-}
-.box:hover .box1 {
-	transform: translate(0%,-100%);
-	transition: 0.4;
-	
 
-	//это меняет файл со статьей(индекс)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: auto;
 }
-.color {
-	color: #8d9e9a;
+
+.contentTabs {
+    width: 100%;
+    height: 30px;
+    position: relative;   
+    display: flex;
+    cursor: pointer;
 }
-h1 {
-	text-align: center;
+
+.tabs {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background-color: cadetblue;
 }
-.Pass {
-	height: 50px;
-	width: 50px;
-	background-color: beige;
-	border: 1px;
-	position: absolute;
+.tabs:hover,
+.tabs:active {
+    background-color: rgb(145, 152, 153);
 }
+
+.contentImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: darkcyan;
+    text-align: center;
+    font-size: 50px;
+}
+
+.active {
+    background-color: darkgoldenrod;
+    z-index: 100;
+} */
